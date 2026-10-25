@@ -452,16 +452,16 @@ gfilterBtns.forEach((btn) => {
   });
 });
 
-function openLightbox(src, title, tag, behanceUrl) {
+function openLightbox(src, title, tag, link) {
   document.getElementById("lightboxImg").src = src;
   document.getElementById("lightboxTitle").textContent = title;
   document.getElementById("lightboxTag").textContent = tag;
-  const behanceBtn = document.getElementById("lightboxBehanceBtn");
-  if (behanceUrl) {
-    behanceBtn.href = behanceUrl;
-    behanceBtn.style.display = "inline-flex";
+  const boxBtn = document.getElementById("lightboxBtn");
+  if (link) {
+    boxBtn.href = link;
+    boxBtn.style.display = "inline-flex";
   } else {
-    behanceBtn.style.display = "none";
+    boxBtn.style.display = "none";
   }
   document.getElementById("lightboxModal").classList.remove("hidden");
 }
