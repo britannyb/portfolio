@@ -1368,6 +1368,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-blue);
 }
+#overview, #projects, #certifications, #publications, #creative-works {
+  padding-top: 100px;
+}
+main {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
