@@ -1,3 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 380px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-gh-bg: #0a0d12;
+  --color-gh-card: #121721;
+  --color-gh-sub: #1b2230;
+  --color-gh-border: #2a3447;
+  --color-gh-text: #c9d1d9;
+  --color-gh-muted: #8b949e;
+  --color-gh-green: #238636;
+  --color-gh-blue: #58a6ff;
+  --color-gh-amber: #f59e0b;
+  --color-gh-crimson: #e11d48;
+}
+
 :root {
   --bg-color: #f4f6f9;
   --card-bg: rgba(255, 255, 255, 0.82);
@@ -59,22 +83,6 @@ body {
   background-image:
     linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
     linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
-}
-
-.bio-stamp {
-  position: absolute;
-  pointer-events: none;
-  user-select: none;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  border: 2px solid rgba(244, 63, 94, 0.35);
-  color: rgba(244, 63, 94, 0.35);
-  padding: 4px 12px;
-  transform: rotate(60deg);
-  transform-origin: center center;
-  border-radius: 4px;
 }
 
 .reveal {
