@@ -71,11 +71,15 @@ body {
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.2);
 }
 
-.glass-sub {
-  background-color: var(--card-sub);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid var(--border-color);
+@layer components {
+  .glass-sub {
+    background-color: var(--card-sub);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
 }
 
 .grid-pattern {
