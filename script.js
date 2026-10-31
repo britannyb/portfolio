@@ -130,14 +130,6 @@ themeToggleBtn.addEventListener("click", () =>
   setTheme(!html.classList.contains("dark")),
 );
 
-const scanlineToggleBtn = document.getElementById("scanlineToggleBtn");
-const scanlineFilter = document.getElementById("scanlineFilter");
-scanlineToggleBtn.addEventListener("click", () => {
-  scanlineFilter.classList.toggle("hidden");
-  scanlineToggleBtn.classList.toggle("text-rose-500");
-  scanlineToggleBtn.classList.toggle("border-rose-500/50");
-});
-
 const mobileMenuBtn = document.getElementById("mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 mobileMenuBtn.addEventListener("click", () =>

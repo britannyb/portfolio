@@ -21,9 +21,6 @@
   <body
     class="font-sans antialiased min-h-screen relative flex flex-col justify-between selection:bg-rose-500/30 selection:text-rose-200"
   >
-    <div class="crt-vignette"></div>
-    <div id="scanlineFilter" class="scanline-overlay hidden"></div>
-
     <canvas
       id="bgParticlesCanvas"
       class="fixed inset-0 w-full h-full pointer-events-none z-0"
@@ -125,14 +122,6 @@
               <i class="fa-brands fa-github"></i>
             </a>
           </div>
-
-          <button
-            id="scanlineToggleBtn"
-            title="Toggle Terminal CRT Scanlines"
-            class="p-2 rounded-lg border border-[var(--border-color)] bg-[var(--card-sub)] text-[var(--text-muted)] hover:text-rose-400 hover:border-rose-500/50 cursor-pointer transition-all flex items-center justify-center w-9 h-9"
-          >
-            <i class="fa-solid fa-tv text-xs"></i>
-          </button>
 
           <button
             id="themeToggleBtn"
