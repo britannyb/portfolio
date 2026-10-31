@@ -455,7 +455,7 @@ gfilterBtns.forEach((btn) => {
 function openLightbox(src, title, tag, link) {
   document.getElementById("lightboxImg").src = src;
   document.getElementById("lightboxTitle").textContent = title;
-  document.getElementById("lightboxTag").textContent = tag;
+  document.getElementById("lightboxTag").textContent = `[${tag}]`;
   const boxBtn = document.getElementById("lightboxBtn");
   if (link) {
     boxBtn.href = link;
