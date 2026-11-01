@@ -96,16 +96,6 @@ function animateBgParticles() {
 }
 animateBgParticles();
 
-window.addEventListener("scroll", () => {
-  const winScroll =
-    document.body.scrollTop || document.documentElement.scrollTop;
-  const height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  const scrolled = (winScroll / height) * 100;
-  document.getElementById("scrollProgress").style.width = scrolled + "%";
-});
-
 const themeToggleBtn = document.getElementById("themeToggleBtn");
 const themeIcon = document.getElementById("themeIcon");
 const html = document.documentElement;
